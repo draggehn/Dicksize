@@ -37,6 +37,7 @@ var sizes = [
 	{'name': 'Indonesia', 'size': 4.6},
 	{'name': 'Iran', 'size': 4.6},
 	{'name': 'Iraq', 'size': 4.5},
+	{'name': 'Italy', 'size': 6.2},
 	{'name': 'Ireland', 'size': 5.0},
 	{'name': 'Isreal', 'size': 5.6},
 	{'name': 'Jamaica', 'size': 6.4},
