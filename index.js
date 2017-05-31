@@ -84,7 +84,7 @@ var entry;
 $(document).ready(function(){
 	var c = 0;
 	sizes.forEach(function(element) {
-		$('.dropdown-menu').append('<li><a class="fuck">' + element.name + '</a></li>');
+		$('.dropdown-menu').append('<li><a>' + element.name + '</a></li>');
 		if(++c == sizes.length) {
 			saveTemplate();
 		}
@@ -149,8 +149,6 @@ function checkSelects(results) {
 function calculate(results) {
 	var length = 0;
 	results.forEach(function(result) {
-		// var add = getSizeByCountry(result.country)*result.percent*0.01;
-		// console.log(add);
 		length += getSizeByCountry(result.country)*result.percent*0.01;
 	});
 	$('#inches').text(length.toFixed(2));
@@ -165,11 +163,3 @@ function getSizeByCountry(country) {
 	}
 	return 0;
 }
-
-
-
-
-
-
-
-
