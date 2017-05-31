@@ -92,7 +92,6 @@ $(document).ready(function(){
 
 	$(document).on('click', '.dropdown-menu li a', function(e) {
 		var text = $(this).text();
-		// console.log('found');
 		$(this).closest('.btn-group').find('.dropdown-toggle').text(text);
 	});
 
@@ -109,13 +108,14 @@ $(document).ready(function(){
 	$('#calc').on('click', function() {
 		var results = [];
 		$('.entry').each(function(index, entry) {
-			var element = {'country': $(entry).find('button').text(), 'percent': $(entry).find('input').val()}
+			var element = {'country': $(entry).find('.dropdown-toggle').text(), 'percent': $(entry).find('input').val()}
 			results.push(element);
 		});
 		var sum = addPergentage(results);
 		var noSelects = checkSelects(results);
 		if(sum == 100 && noSelects) {
 			$('.error').slideUp(100);
+			console.log(results);
 			calculate(results);
 		} else {
 			$('.error').slideDown(100);
