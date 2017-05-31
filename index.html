@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dicks</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Londrina+Outline|Freckle+Face" rel="stylesheet">
+	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- <script type="text/javascript" src="sizes.js"></script> -->
+	<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+	<div class="jumbotron">
+		<h1>What's <span id="your">YOUR</span> <span id="you"> <img src="YOU_w.png"></span> <span id="dick">dick</span> size?</h1>
+	</div>
+
+	<div class="content container-fluid">
+		<p>Enter your heritage:</p>
+		<p class="error">Make sure all countries are selected, and percentages add up to 100.</p>
+		<table class="entry col-sm-6 col-sm-offset-3 col-xs-12">
+			<td class="t1">Nationality:</td>
+			<td class="t2">
+				<div class="btn-group heritage">
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select<span class="caret"></span></button>
+					<ul class="dropdown-menu"></ul>
+				</div>
+			</td>
+			<td class="t3">Percentage:</td>
+			<td class="t4">
+				<input type="text" class="form-control" placeholder="%" aria-describedby="basic-addon2">
+			</td>
+		</table>
+	</div>
+
+	<div class="buttons container-fluid">
+		<div class="col-sm-6 col-sm-offset-3 col-xs-12">
+			<button id="add" type="button" class="btn btn-default">Add Entry</button>
+			<button id="remove" type="button" class="btn btn-default">Remove Entry</button>
+			<button id="calc" type="button" class="btn btn-default">Cockulate!</button>
+		</div>
+	</div>
+
+	<div class="result container-fluid">
+		<h2>Your estimated dick size is...</h2>
+		<h3><span id="inches"></span> inches</h3>
+	</div>
+</body>
+</html>

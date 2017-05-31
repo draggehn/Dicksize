@@ -1,0 +1,166 @@
+* {
+	color: #f0f0f0;
+}
+
+.jumbotron {
+	background: #202020;
+	text-align: center;
+	text-transform: uppercase;
+	color: #f0f0f0;
+}
+
+h1 {
+	font-family: 'Londrina Outline', cursive;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 16px;
+	word-spacing: 7px;
+
+}
+
+#inches {
+	font-size: 72px;
+}
+
+#your {
+	color: #FF9800;
+}
+
+/*#your p {
+	color: #FF9800;
+	font-size: 63px;
+	position: absolute;
+	left: 0;
+	top: 12px;
+	margin: 0;
+	z-index: 2;
+}*/
+
+/*#your img {
+	position: absolute;
+	top: -8px;
+	left: 0;
+	width: 121px;
+	z-index: 1;
+}*/
+
+#you img {
+	width: 120px;
+}
+
+#dick {
+	font-family: 'Freckle Face', cursive;
+}
+
+body {
+	background: #0f0f0f;
+}
+
+table {
+	width: 100%;
+	text-align: left;
+}
+
+td {
+	vertical-align: center;
+	box-sizing: border-box;
+}
+
+.t1 {
+	width: 75px;
+}
+
+.t3 {
+	width: 80px;
+}
+
+.t4 {
+	width: 50px;
+}
+
+input {
+	width: 100%;
+}
+
+.form-control {
+	padding: 6px 0px;
+	text-align: center;
+}
+
+.content, .buttons, .result {
+	text-align: center;
+}
+
+.error {
+	color: #ff0000;
+	display: none;
+}
+
+.entry {
+	margin-top: 5px;
+}
+
+.entry > div {
+	float: left;
+}
+
+.cole {
+	margin-left: 30px;
+}
+
+.entry .heritage {
+	width: 100%;
+	padding-right: 25px;
+}
+
+.caret {
+	color: #999999;
+}
+
+.dropdown-toggle {
+	width: 100%;
+}
+
+.dropdown-menu {
+	max-height: 300px;
+	overflow: scroll;
+}
+
+.buttons {
+	margin-top: 15px;
+}
+
+.buttons button {
+	margin: 3px;
+	width: auto;
+}
+
+.result {
+	margin: 10px 25% 0px;
+	/*background: #1b1b1b;*/
+	background: #202020;
+	display: none;
+}
+
+@media screen and (max-width: 774px) {
+	#you img {
+		width: 80px;
+	}
+}
+
+@media screen and (max-width: 491px) {
+	#you {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 381px) {
+	.buttons button {
+		width: 100%;
+	}
+}
